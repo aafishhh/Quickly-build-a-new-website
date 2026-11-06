@@ -12,7 +12,7 @@ Quickly build a new website — skill vault (skills added later)
    - `page-block-blog`：博客（列表页 + 单篇文章页）
    - `page-block-home`：首页（竞品调研 + 块区选型方法论——不写死骨架，调研前排 5 个竞品后决策块区顺序与每块样式）
 4. **SEO 规范**（定 head 与新词）— 按页面类型选：
-   - `blog-seo-writing`：博客文章页（长尾词 + TDK + 正文密度 + 文章内链，与 page-block-blog 配套）
+   - `blog-seo-writing`：博客文章页（防蚕食 + 长尾词 + TDK + 正文密度 + 内链 + slug/图片/OG + 发布后 GSC，与 page-block-blog 配套）
    - `homepage-seo`：首页 + 销售型落地页等常见落地页（品牌词 + TDK + WebSite schema + 枢纽内链，与 page-block-home 配套；导航/会员等特殊类型不使用）
 5. **tool-site-foundation**（待建，技术落地）— 骨架+内容定后用。技术栈/域名/部署/上线
 
@@ -28,7 +28,7 @@ Quickly build a new website — skill vault (skills added later)
 | `skills/new-website-ideation` | 新网站/新产品立项（模糊想法 → 可立项的业务决策文档） | 已放入，逐个优化完善中 |
 | `skills/mvp-scoping` | 构造 MVP（立项范围 → 页面类型清单 + 导航关系，信息架构层面；单页块区/UI 由后续独立 skill 覆盖） | 已放入，逐个优化完善中 |
 | `skills/page-block-blog` | 页面块区家族 · Blog（Blog 列表页 + 单篇文章页的块区通用模板，参考 trendtrackpromocode.com 提炼） | 已放入，逐个优化完善中 |
-| `skills/blog-seo-writing` | 博客 SEO 写作规则（关键词/竞品/TDK/正文结构/密度/内链/验证，来自用户调教规范） | 已放入，逐个优化完善中 |
+| `skills/blog-seo-writing` | 博客 SEO 写作完整规范 v2（流程含防蚕食 → 正文结构 → 密度 → 内链 → URL/图片/OG/外链/最后更新 → 发布后 24h GSC → 交付验证，来自用户调教规范） | 已放入，逐个优化完善中 |
 | `skills/page-block-foundation` | 页面块区家族 · 基础页（About/Contact/Privacy/Terms 四页固定块区骨架模板） | 已放入，逐个优化完善中 |
 | `skills/page-block-home` | 页面块区家族 · 首页（竞品调研 + 块区选型方法论：搜索/指定取前排 5 竞品 → 拆解块区顺序与每块样式 → 结合自家产品选型） | 已放入，逐个优化完善中 |
 | `skills/homepage-seo` | 常见落地页 SEO 规范（只针对首页 + 销售型落地页：品牌主词 + TDK + canonical/hreflang + WebSite/Organization schema + 枢纽内链；导航/目录/索引、会员/账户/工作台等特殊类型不适用；与 blog-seo-writing 平级不共用） | 已放入，逐个优化完善中 |
