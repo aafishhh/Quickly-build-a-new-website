@@ -1,6 +1,6 @@
 ---
 name: page-block-blog
-description: 页面块区 skill 家族之 Blog 页：把 Blog 两类页面（列表页 /blog 与 单篇文章页 /blog/<slug>）的块区结构固定为统一模板——块区数量、顺序、职责写死，供任意网站复用一致。参考真实站 worthcodes.com 的块区结构提炼（列表 = Hero + 最新大卡 + Popular 侧栏 + 分类筛选 + 卡片网格；文章 = 面包屑 + 元信息 + 导语 + 封面 + 正文 H2 + FAQ + Related guides + 返回）。视觉风格/主题色不在此定（由产品各自定）。适用于要建网站博客模块、需要确定 Blog 列表页和文章页固定块区长什么样的场景。When to use: 用户要做一个网站的博客模块、想知道 Blog 列表页和文章页的统一块区模板（固定结构），或要基于 worthcodes.com 的博客结构做自己的博客页。
+description: 页面块区 skill 家族之 Blog 页：把 Blog 两类页面（列表页 /blog 与 单篇文章页 /blog/<slug>）的块区结构固定为统一模板——块区数量、顺序、职责写死，供任意网站复用一致。参考真实站 worthcodes.com 的块区结构提炼（列表 = Hero + 最新大卡 + Popular 侧栏 + 分类筛选 + 卡片网格；文章 = 面包屑 + 元信息 + 导语 + 封面 + 正文[左TOC目录导航|正文|右侧栏] + FAQ + Related guides + 返回，TOC 滚动联动参考 foreplay.co）。视觉风格/主题色不在此定（由产品各自定）。适用于要建网站博客模块、需要确定 Blog 列表页和文章页固定块区长什么样的场景。When to use: 用户要做一个网站的博客模块、想知道 Blog 列表页和文章页的统一块区模板（固定结构），或要基于 worthcodes.com 的博客结构做自己的博客页。
 agent_created: true
 ---
 
@@ -49,7 +49,7 @@ agent_created: true
 | 4 | **导语**（`text-lg`，一句话回答） | 摘要/开局 | 位置在此；文案归 SEO 内容规则 skill（开头 100 字内回答核心问题） |
 | 5 | **元信息行** | 阅读前信息 | **固定字段：作者头像 + 作者名 + `Published 日期` · `Updated 日期` + `✓ Last verified 日期` + `阅读时间`**（多段用分隔符隔开）。Last verified（绿色）徽章是可信度加分项 |
 | 6 | **封面大图**（居中 `h-[280px]`，`max-w-[680px]`） | 视觉入口 | 圆角、居中、宽幅。文件名/alt 归 SEO 规范 |
-| 7 | **正文**（居中列 + 左右 `aside`） | 核心内容 | 桌面三栏网格 `[左TOC | 正文 | 右侧栏]`，移动端左右侧栏隐藏。**正文固定层级：`H2(带#锚点) → 段落 → 无序/有序列表 → 加粗关键值`**。正文写法归 SEO 内容规则 skill |
+| 7 | **正文**（居中列 + 左右 `aside`） | 核心内容 | 桌面三栏网格 `[左TOC | 正文 | 右侧栏]`，移动端左右侧栏隐藏。**左侧 `aside` = 目录导航（TOC，必须有）**：标题「Table of contents」+ 有序列表，每项 = H2 锚点链接（`#<h2-id>`），滚动联动高亮当前段落（`.is-active`，IntersectionObserver 实现，参考 foreplay.co）。**正文固定层级：`H2(带#锚点) → 段落 → 无序/有序列表 → 加粗关键值`**。正文写法归 SEO 内容规则 skill |
 | 8 | **FAQ 区**（`pt-10` 分隔线后） | 打消疑虑 | **固定：H2「Frequently asked questions」+ 每个问答 = H3 问题 + 段落答案**。需与页面 JSON-LD `FAQPage` 逐字一致（保富摘要） |
 | 9 | **Related guides** | 留住读者 | **固定：区头（eyebrow「Keep reading」+ H2「Related guides」+ 右侧「View all posts →」链接）+ 3 列文章卡片**（封面图 + H3 标题 + 摘要 + 作者/阅读时间） |
 | 10 | **返回链接** | 回到列表 | **固定：`← Back to all guides`**，链接回 `/blog/` |
@@ -84,9 +84,10 @@ agent_created: true
 - **SEO 内容不在本 skill**：H1/导语/正文/FAQ 写法归独立 SEO 内容规则 skill
 - **卡片一致性**：列表页卡片 = Related 卡片 = Popular 列表用同一套样式
 - **Last verified / Evidence log**：促销/折扣类博客的信任要素（验证徽章 + 证据标签），普通内容博客可省，但块结构位置保留
+- **左侧 TOC 必须有**：桌面端目录导航（Table of contents）是文章页固定块区，正文每个 H2 需带 `id` 锚点，TOC 项滚动联动高亮（参考 foreplay.co）
 - 与 `git-worktree-isolation` 配合：博客模块在独立 worktree/分支开发
 
 ## Resources
 
-- 参考源：`worthcodes.com/blog/` 与 `/blog/winninghunter-discount-code-2026`（已抓取分析）
+- 参考源：`worthcodes.com/blog/` 与 `/blog/winninghunter-discount-code-2026`（已抓取分析）；左侧 TOC 目录导航参考 `foreplay.co/post/the-2026-super-bowl-ads`（Table of contents + H2 锚点 + `.is-active` 滚动高亮 + IntersectionObserver 联动）
 - 本家族其他 skill：`page-block-home`、`page-block-foundation`（基础页）等（建一个页面类型一个 skill）
