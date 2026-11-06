@@ -13,7 +13,7 @@ Quickly build a new website — skill vault (skills added later)
    - `page-block-home`：首页（竞品调研 + 块区选型方法论——不写死骨架，调研前排 5 个竞品后决策块区顺序与每块样式）
 4. **SEO 规范**（定 head 与新词）— 按页面类型选：
    - `blog-seo-writing`：博客文章页（防蚕食 + 长尾词 + TDK + 正文密度 + 内链 + slug/图片/OG + 发布后 GSC，与 page-block-blog 配套）
-   - `homepage-seo`：首页 + 销售型落地页等常见落地页（品牌词 + TDK + WebSite schema + 枢纽内链，与 page-block-home 配套；导航/会员等特殊类型不使用）
+   - `homepage-seo`：SEO 落地页（产品/服务/功能页，商业意图词：判词性 + TDK + 文案密度 + 板块参考骨架 + 内链/图片/OG + GSC；板块结构交 page-block-home；博客信息意图词归 blog-seo-writing）
 5. **tool-site-foundation**（待建，技术落地）— 骨架+内容定后用。技术栈/域名/部署/上线
 
 核心原则：
@@ -31,6 +31,6 @@ Quickly build a new website — skill vault (skills added later)
 | `skills/blog-seo-writing` | 博客 SEO 写作完整规范 v2（流程含防蚕食 → 正文结构 → 密度 → 内链 → URL/图片/OG/外链/最后更新 → 发布后 24h GSC → 交付验证，来自用户调教规范） | 已放入，逐个优化完善中 |
 | `skills/page-block-foundation` | 页面块区家族 · 基础页（About/Contact/Privacy/Terms 四页固定块区骨架模板） | 已放入，逐个优化完善中 |
 | `skills/page-block-home` | 页面块区家族 · 首页（竞品调研 + 块区选型方法论：搜索/指定取前排 5 竞品 → 拆解块区顺序与每块样式 → 结合自家产品选型） | 已放入，逐个优化完善中 |
-| `skills/homepage-seo` | 常见落地页 SEO 规范（只针对首页 + 销售型落地页：品牌主词 + TDK + canonical/hreflang + WebSite/Organization schema + 枢纽内链；导航/目录/索引、会员/账户/工作台等特殊类型不适用；与 blog-seo-writing 平级不共用） | 已放入，逐个优化完善中 |
+| `skills/homepage-seo` | SEO 落地页写作规范 v2（首页 + 销售型落地页：判词性/一页一意图/防蚕食 → TDK → 页面结构参考骨架(可调序) → 文案规则/密度 → 内链/图片/OG → 发布后 GSC → 交付验证；块区结构交 page-block-home；导航/会员等特殊类型不适用；与 blog-seo-writing 平级不共用） | 已放入，逐个优化完善中 |
 
 > 每个 skill 都会逐个针对性地优化完善后再补充进本仓库。
