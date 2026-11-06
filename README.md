@@ -11,7 +11,9 @@ Quickly build a new website — skill vault (skills added later)
    - `page-block-foundation`：基础页（About/Contact/Privacy/Terms）
    - `page-block-blog`：博客（列表页 + 单篇文章页）
    - `page-block-home`：首页（竞品调研 + 块区选型方法论——不写死骨架，调研前排 5 个竞品后决策块区顺序与每块样式）
-4. **blog-seo-writing**（定内容）— 写博客/内容页时用。产出 TDK + H2 + 密度 + 内链（与 page-block-blog 配套：块区给放哪，本 skill 给写什么）
+4. **SEO 规范**（定 head 与新词）— 按页面类型选：
+   - `blog-seo-writing`：博客文章页（长尾词 + TDK + 正文密度 + 文章内链，与 page-block-blog 配套）
+   - `homepage-seo`：首页 + 非博客页（品牌词 + TDK + WebSite schema + 枢纽内链，与 page-block-home/foundation 配套）
 5. **tool-site-foundation**（待建，技术落地）— 骨架+内容定后用。技术栈/域名/部署/上线
 
 核心原则：
@@ -29,5 +31,6 @@ Quickly build a new website — skill vault (skills added later)
 | `skills/blog-seo-writing` | 博客 SEO 写作规则（关键词/竞品/TDK/正文结构/密度/内链/验证，来自用户调教规范） | 已放入，逐个优化完善中 |
 | `skills/page-block-foundation` | 页面块区家族 · 基础页（About/Contact/Privacy/Terms 四页固定块区骨架模板） | 已放入，逐个优化完善中 |
 | `skills/page-block-home` | 页面块区家族 · 首页（竞品调研 + 块区选型方法论：搜索/指定取前排 5 竞品 → 拆解块区顺序与每块样式 → 结合自家产品选型） | 已放入，逐个优化完善中 |
+| `skills/homepage-seo` | 非博客页 SEO 规范（首页/落地页/内页共用：品牌主词 + TDK + canonical/hreflang + WebSite/Organization schema + 枢纽内链；与 blog-seo-writing 平级不共用） | 已放入，逐个优化完善中 |
 
 > 每个 skill 都会逐个针对性地优化完善后再补充进本仓库。

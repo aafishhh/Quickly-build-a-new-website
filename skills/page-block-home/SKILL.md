@@ -23,7 +23,7 @@ agent_created: true
 **沿袭家族铁律**：
 - **块区=产出物**（调研后得出的方案），**视觉=产品皮肤**（每个块区样式参考竞品后自定）
 - **导航/页脚=产品定制占位**（本 skill 只标「这个产品要不要、长什么样」的调研问题，不写死内容）
-- **SEO 内容规则独立**（首页 SEO 的文案/关键词写法交 `blog-seo-writing` 或独立 SEO skill，本 skill 只管块区与样式）
+- **SEO 独立**（本 skill 只管块区与样式；首页 + 非博客页的 SEO head/关键词/schema 交 `homepage-seo`，博客页交 `blog-seo-writing`）
 
 **与上层衔接**：
 - 输入：`mvp-scoping` 的页面清单（首页必在清单里）+ 一个核心关键词或竞品 URL
@@ -133,7 +133,7 @@ n) Footer
 - **输入**：`mvp-scoping` 的页面清单（首页是核心用例页）+ 竞品 URL / 核心关键词
 - **输出**：首页块区方案（清单 + 顺序 + 每块样式参考）交给 `tool-site-foundation` 实现
 - **其余页面**：基础页 → `page-block-foundation`，博客页 → `page-block-blog`
-- **首页 SEO**：块区定了之后，首页 SEO head（title/canonical/hreflang）怎么写 → 交给 `blog-seo-writing` / 独立 SEO skill
+- **首页 SEO**：块区定了之后，首页 + 非博客页的 SEO head（title/description/canonical/hreflang/schema）与新词策略 → 交给 `homepage-seo`；博客文章页 → 交给 `blog-seo-writing`
 
 ## 注意事项
 
