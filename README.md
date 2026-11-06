@@ -10,7 +10,7 @@ Quickly build a new website — skill vault (skills added later)
 3. **页面块区家族**（定骨架）— 页面清单定下后用。按页面类型选：
    - `page-block-foundation`：基础页（About/Contact/Privacy/Terms）
    - `page-block-blog`：博客（列表页 + 单篇文章页）
-   - `page-block-home`（待建）：首页
+   - `page-block-home`：首页（块区序列 + 整站风格设计方向库 + 首页 SEO head）
 4. **blog-seo-writing**（定内容）— 写博客/内容页时用。产出 TDK + H2 + 密度 + 内链（与 page-block-blog 配套：块区给放哪，本 skill 给写什么）
 5. **tool-site-foundation**（待建，技术落地）— 骨架+内容定后用。技术栈/域名/部署/上线
 
@@ -28,5 +28,6 @@ Quickly build a new website — skill vault (skills added later)
 | `skills/page-block-blog` | 页面块区家族 · Blog（Blog 列表页 + 单篇文章页的块区通用模板，参考 trendtrackpromocode.com 提炼） | 已放入，逐个优化完善中 |
 | `skills/blog-seo-writing` | 博客 SEO 写作规则（关键词/竞品/TDK/正文结构/密度/内链/验证，来自用户调教规范） | 已放入，逐个优化完善中 |
 | `skills/page-block-foundation` | 页面块区家族 · 基础页（About/Contact/Privacy/Terms 四页固定块区骨架模板） | 已放入，逐个优化完善中 |
+| `skills/page-block-home` | 页面块区家族 · 首页（首页块区序列 + 整站风格设计方向库 + 首页 SEO head） | 已放入，逐个优化完善中 |
 
 > 每个 skill 都会逐个针对性地优化完善后再补充进本仓库。
