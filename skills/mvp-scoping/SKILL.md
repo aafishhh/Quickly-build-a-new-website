@@ -105,4 +105,4 @@ agent_created: true
 ## References
 
 - 承接：`new-website-ideation` 的 `08-prd.md`（MVP 范围 + 不做清单）
-- 后续：独立的「页面块区」skill（单页块区/UI）→ `tool-site-foundation`（技术基建）
+- 后续：`mvp-function-flow`（核心功能链路）→ 独立的「页面块区」skill（单页块区/UI）→ `tool-site-foundation`（技术基建）

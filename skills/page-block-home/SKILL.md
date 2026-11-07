@@ -26,7 +26,7 @@ agent_created: true
 - **SEO 独立**（本 skill 只管块区与样式；首页 + 销售型落地页等常见落地页的 SEO head/关键词/schema 交 `homepage-seo`，博客页交 `blog-seo-writing`，导航/会员等特殊类型另议）
 
 **与上层衔接**：
-- 输入：`mvp-scoping` 的页面清单（首页必在清单里）+ 一个核心关键词或竞品 URL
+- 输入：`mvp-scoping` 的页面清单（首页必在清单里）+ 一个核心关键词或竞品 URL；建议先过 `mvp-function-flow`（首页承载的功能动作）再定块区
 - 输出：首页块区方案（块区清单 + 顺序 + 每块样式参考）交给 `tool-site-foundation` 实现
 
 ## 工作流：调研 → 归纳 → 选型
